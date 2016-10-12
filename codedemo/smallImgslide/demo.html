@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="../../lib/css/base.css"/>
+    <link rel="stylesheet" href="css/slideCss.css"/>
+    <script src="../../lib/js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<!--example 1-->
+<div class="slideCon">
+    <div class="slideBox">
+        <ul>
+            <li><img src="" alt=""/></li>
+        </ul>
+    </div>
+    <a href="javascript:" class="prev">prev</a>
+    <a href="javascript:" class="next">next</a>
+</div>
+<!--example 2-->
+<div class="filesBox">
+<div class="filesMain originalBox clearfix">
+    <div class="titleList orginalList fl">
+        <ul>
+            <li class="" data-index="1"><a href="javascript:;"><span>tab1</span></a></li>
+            <li data-index="2" class=""><a href="javascript:;"><span>tab2</span></a></li>
+            <li data-index="3" class=""><a href="javascript:;"><span>tab3</span></a></li>
+            <li data-index="4" class="listCur"><a href="javascript:;"><span>tab4</span></a></li>
+        </ul>
+    </div>
+    <div class="filesimgAll originalAll">
+        <ul class="filesImgLi">
+            <li class="basisImg imgAll">
+                <ul class="clearfix" data-count="1">
+                    <li class="aliCur"><img src="" alt=""></li>
+                    <li class="aliCur"><img src="" alt=""></li>
+                </ul>
+            </li>
+            <li class="structImg imgAll">
+                <ul class="clearfix" data-count="2">
+                    <li class="aliCur"><img src="" alt=""></li>
+                    <li class="aliCur"><img src="" alt=""></li>
+                </ul>
+            </li>
+            <li class="originalImg imgAll">
+                <ul class="clearfix" data-count="3">
+                    <li class="aliCur">
+                        <img src="" alt="">
+                    </li>
+                </ul>
+            </li>
+            <li class="scienceImg imgAll">
+                <ul class="clearfix" data-count="4">
+                    <li class="aliCur"><img src="" alt=""></li>
+                    <li class="aliCur"><img src="" alt=""></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="slideBtn">
+        <a href="javascript:;" class="prevBtn"></a>
+        <a href="javascript:;" class="nextBtn"></a>
+    </div>
+</div>
+</div>
+<script src="smallSlider.js"></script>
+<script>
+    //单张大图
+    $(function() {
+        var bannerslider = new Slider($('.slideBox'), {
+            time: 3000,
+            delay: 400,
+            auto: false,
+            mode: 'fade',
+            controller: $('.none'),
+            activeControllerCls: 'active'
+        });
+        $('.prev').click(function() {
+            bannerslider.prev();
+        });
+        $('.next').click(function() {
+            bannerslider.next();
+        });
+    });
+//小图多张
+$(".slideCon").each(function(){
+    var _this=$(this);
+    var turnImg2 = new smallSlide(_this, {
+        imgcount:1,//每次移动小图的数量
+        omargin:0,//小图之间的距离
+        speed:300,
+        countAll:2,//当前显示图片的总数量
+        slideImgCont:2,//每一组图片的数量
+        direction:"top",//方向
+        prevClass:".prev",
+        nextClass:".next"
+    });
+});
+    //可以跳过选项卡的轮播
+    $(function () {
+        var turnImg = new tabSlider($('.originalAll'), {
+            time: 3000,
+            delay: 400,
+            controller: $('.orginalList'),
+            activeControllerCls: 'listCur'
+        });
+        $('.originalBox .prevBtn').click(function () {
+            turnImg.prev()
+        });
+        $('.originalBox .nextBtn').click(function () {
+            turnImg.next()
+        });
+    });
+
+</script>
+</body>
+</html>
