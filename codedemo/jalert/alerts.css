@@ -1,0 +1,114 @@
+/* CSS Document */
+
+/*delete button*/
+#popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	width: 380px; /* Dialog will be no smaller than this */
+	min-height:180px; /* Dialog will wrap after this width */
+	background: #FFF;
+    font-family:'Microsoft YaHei';
+}
+h1{margin: 0;
+padding: 0;}
+#popup_title {
+	height: 40px;
+	background-color: #e9e9e9;
+	width: 380px;
+	font-size: 14px;
+	color: #333;
+	padding-left: 20px;
+	line-height: 40px;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	box-sizing: border-box;
+}
+#popup_close{
+	display: inline-block;
+	position: absolute;
+	top: 14px;
+	width: 11px;
+	height: 11px;
+	background: url(images/close.png) no-repeat;
+	right: 14px;
+	cursor: pointer;
+}
+#popup_close:hover{
+	background: url(images/closehover.png) no-repeat;
+}
+#popup_content {
+	font-size: 16px;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 18px;
+}
+
+/*#popup_content.confirm,#popup_content.alert {
+    background: url(/Content/Theme/default/th.png) no-repeat 10px center;
+}
+
+#popup_content.prompt {
+	background-image: url(/Content/Theme/default/yanshou/images/help.gif);
+}*/
+
+#popup_message {
+	color: #28b362;
+	font-size: 16px;
+	text-align: center;
+	line-height: 18px;
+	display: inline-block;
+    padding:0 10px;
+}
+
+#popup_panel {
+	position: relative;
+	margin: 20px auto;
+	text-align: center;
+	height: 26px;
+}
+
+#popup_prompt {
+	margin: .5em 0;
+}
+#sureButton,#popup_ok {
+	font-size: 12px;
+	text-align: center;
+	line-height: 24px;
+	width: 74px;
+	height: 26px;
+	border-radius: 2px;
+	cursor: pointer;
+	background-color: #1686cc;
+	border: none;
+	color: #fff;
+}
+#popup_ok:hover {
+	background-color: #1997ea;
+}
+#popup_cancel{
+	font-size: 12px;
+	text-align: center;
+	line-height: 24px;
+	width: 74px;
+	height: 26px;
+	border-radius: 2px;
+	cursor: pointer;
+	background-color: #e9e9e9;
+	border: 1px solid #ddd;
+	color: #333;
+	margin-left: 20px;
+}
+#popup_ok:focus,#popup_cancel:focus {
+	border: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
