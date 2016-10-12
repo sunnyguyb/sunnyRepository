@@ -1,0 +1,511 @@
+/*example 2*/
+.filesBox {
+    margin:0 auto;
+    width: 1000px;
+    background-color: #f8f8f8; }
+.filesBox .filesTit {
+    height: 55px;
+    line-height: 55px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #666;
+    font-weight:normal;
+}
+.filesBox .filesTit em {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    background: url("../images/icons.png") no-repeat -28px 0; }
+.filesBox .threeExchTit {
+    margin-top: 15px; }
+.filesBox .filesMain {
+    position: relative; }
+.filesBox .filesMain .slideBtn {
+    position: absolute;
+    width: 100%;
+    top: 275px;
+    height: 50px; }
+.filesBox .filesMain .slideBtn a {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 50px; }
+.filesBox .filesMain .slideBtn .prevBtn {
+    left: 4px;
+    background: url("../images/slider.png") -82px 0; }
+.filesBox .filesMain .slideBtn .prevBtn:hover {
+    background: url("../images/slider.png") -26px 0; }
+.filesBox .filesMain .slideBtn .nextBtn {
+    right: 4px;
+    background: url("../images/slider.png") -55px 0; }
+.filesBox .filesMain .slideBtn .nextBtn:hover {
+    right: 4px;
+    background: url("../images/slider.png") 0 0; }
+.filesBox .filesMain .filesPart {
+    width: 100%;
+    height: 600px; }
+.filesBox .filesMain .filesPart .partTit {
+    float: left;
+    width: 70px;
+    line-height: 600px;
+    height: 100%;
+    text-align: center;
+    background-color: #15212d; }
+.filesBox .filesMain .filesPart .partTit h6 {
+    display: inline-block;
+    width: 18px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 24px;
+    *margin-top: 264px;
+    vertical-align: middle;
+    font-weight:normal;
+    color: #fff; }
+.filesBox .filesMain .filesPart .partBox {
+    position: relative;
+    float: left;
+    width: 930px;
+    height: 600px;
+    overflow: hidden; }
+.filesBox .filesMain .filesPart .partBox .partSlide {
+    position: absolute; }
+.filesBox .filesMain .filesPart .partBox .partSlide li {
+    position: relative;
+    float: left;
+    width: 930px;
+    height: 600px;
+}
+.filesBox .filesMain .filesPart .partBox .partSlide li img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+.filesBox .filesMain .filesPart .partBox .partSlide li .enlargeBtn {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    opacity: .5;
+    filter: alpha(opacity=50); }
+.filesBox .filesMain .filesPart .partBox .partSlide li .enlargeBtn em {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url("../images/enlarge.png") no-repeat; }
+.filesBox .filesMain .filesPart2 {
+    margin-top: 20px; }
+.filesBox .filesMain .designNote {
+    padding: 0 12px 30px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #666;
+    text-indent: 2em; }
+.filesBox .filesMain .titleList {
+    width: 70px;
+    *width: 67px;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    background-color: #fff; }
+.filesBox .filesMain .titleList ul {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #ddd; }
+.filesBox .filesMain .titleList ul li {
+    width: 70px;
+    height: 150px; }
+.filesBox .filesMain .titleList ul li a {
+    display: block;
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    border: 1px solid #ddd;
+    border-bottom: none; }
+.filesBox .filesMain .titleList ul li a span {
+    display: inline-block;
+    width: 18px;
+    margin: 0 auto;
+    *margin-top: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: middle;
+    color: #666; }
+.filesBox .filesMain .titleList ul li a:hover {
+    background-color: #1686cc;
+    border-color: #1686cc; }
+.filesBox .filesMain .titleList ul li a:hover span {
+    color: #fff; }
+.filesBox .filesMain .titleList ul .listCur a {
+    background-color: #1686cc;
+    border-color: #1686cc; }
+.filesBox .filesMain .titleList ul .listCur a span {
+    color: #fff; }
+.filesBox .filesMain .filesimgAll {
+    position: relative;
+    width: 928px;
+    height: 600px;
+    overflow: hidden; }
+.filesBox .filesMain .filesImgLi {
+    position: relative;
+    width: 930px;
+    height: 600px;
+    overflow: hidden;
+    background-color: #ddd; }
+.filesBox .filesMain .filesImgLi .imgAll {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+.filesBox .filesMain .filesImgLi .imgAll ul li {
+    float: left;
+    width: 928px;
+    height: 600px; }
+.filesBox .filesMain .filesImgLi .imgAll ul li img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+.filesBox .filesMain .filesImgLi .basisImg {
+    display: block; }
+.filesBox .filesMain .fourExch, .filesBox .filesMain .threeExch {
+    position: relative;
+    width: 1000px;
+    height: 530px;
+    overflow: hidden; }
+.filesBox .filesMain .exchangeBox {
+    position: relative;
+    height: 100%; }
+.filesBox .filesMain .exchangeBox li {
+    float: left;
+    position: relative; }
+.filesBox .filesMain .exchangeBox li .exchImgBox {
+    width: 632px;
+    height: 530px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #ddd; }
+.filesBox .filesMain .exchangeBox li .exchImgBox img {
+    display: block;
+    width: 632px;
+    height: 430px; }
+.filesBox .filesMain .exchangeBox li .exchImgBox p {
+    width: 100%;
+    height: 100px;
+    padding: 7px 12px 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: #666; }
+.filesBox .filesMain .exchangeBox li .exchMain {
+    width: 368px;
+    height: 100%;
+    padding: 6px 17px 0;
+    background-color: #ddd; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes {
+    height: 470px;
+    overflow: hidden; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul li {
+    position: relative;
+    width: 334px;
+    margin-top: 27px;
+    min-height: 70px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+    font-size: 0; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul li .exchHead img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -15px; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul li .exchHead span {
+    display: inline-block;
+    font-size: 12px; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul li .exchHead .personName {
+    color: #333; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul li .exchHead .personPos {
+    color: #1686cc; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul li .exchWord {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    word-break: break-all;
+    color: #666; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .exchLeft img {
+    left: 10px; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .exchLeft .personName {
+    margin-left: 60px; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .exchLeft .personPos {
+    margin-left: 20px; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .exchRight img {
+    right: 10px; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .exchRight .personName {
+    float: right;
+    margin-right: 60px; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .exchRight .personPos {
+    float: right;
+    margin-right: 20px; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .praise, .filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .comment {
+    width: 14px;
+    height: 14px;
+    margin-left: 20px;
+    background-image: url("../images/icons.png");
+    background-repeat: no-repeat; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .praise {
+    background-position: -14px 0; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .comment {
+    background-position: 0 0; }
+.filesBox .filesMain .exchangeBox li .exchMain .exchNotes ul .noWord {
+    background-color: #ddd; }
+.filesBox .filesMain .exchangeBox li .exchMain .switchBtn {
+    width: 100%;
+    height: 54px;
+    padding-top: 20px; }
+.filesBox .filesMain .exchangeBox li .exchMain .switchBtn a {
+    display: block;
+    margin-left: 162px;
+    width: 13px;
+    height: 7px;
+    background-image: url("../images/icons.png");
+    background-repeat: no-repeat; }
+.filesBox .filesMain .exchangeBox li .exchMain .switchBtn .topBtn {
+    background-position: -42px 0; }
+.filesBox .filesMain .exchangeBox li .exchMain .switchBtn .downBtn {
+    margin-top: 9px;
+    background-position: -74px -7px; }
+.filesBox .filesMain .exchangeBox li .exchMain .switchBtn .topBtn:hover {
+    background-position: -74px 0; }
+.filesBox .filesMain .exchangeBox li .exchMain .switchBtn .downBtn:hover {
+    margin-top: 9px;
+    background-position: -42px -7px; }
+.filesBox .filesMain .fourExch .slideBtn, .filesBox .filesMain .threeExch .slideBtn {
+    top: 190px; }
+.filesBox .filesMain .fourExch .slideBtn .nextBtn, .filesBox .filesMain .threeExch .slideBtn .nextBtn {
+    right: 370px; }
+.filesBox .filesMain .fourExch .slideBtn .fourExch .nextBtn:hover, .filesBox .filesMain .fourExch .slideBtn .threeExch .slideBtn:hover, .filesBox .filesMain .threeExch .slideBtn .fourExch .nextBtn:hover, .filesBox .filesMain .threeExch .slideBtn .threeExch .slideBtn:hover {
+    right: 370px; }
+.filesBox .filesMain .filesTeamTit {
+    text-align: center;
+    margin-top: -22px;
+    font-size: 18px;
+    color: #1686cc; }
+.filesBox .filesMain .desginerBox {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 335px; }
+.filesBox .filesMain .desginerBox .desImgBox {
+    width: 840px;
+    height: 295px;
+    margin: 0 auto;
+    overflow: hidden; }
+.filesBox .filesMain .desginerBox .desImgBox ul {
+    height: 100%;
+    width: 860px; }
+.filesBox .filesMain .desginerBox .desImgBox ul li {
+    float: left;
+    height: 100%;
+    width: 194px;
+    margin-right: 20px; }
+.filesBox .filesMain .desginerBox .desImgBox ul li .desPhoto {
+    width: 100%;
+    height: 248px; }
+.filesBox .filesMain .desginerBox .desImgBox ul li .desPhoto img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+.filesBox .filesMain .desginerBox .desImgBox ul li p {
+    height: 47px;
+    width: 100%;
+    padding: 0 35px;
+    line-height: 47px;
+    color: #999;
+    font-size: 14px;
+    background-color: #ecf3f9; }
+.filesBox .filesMain .desginerBox .desImgBox ul li p .desPosition {
+    float: right; }
+.filesBox .filesMain .desginerBox .turnBtn {
+    position: absolute;
+    width: 100%;
+    top: 127px; }
+.filesBox .filesMain .desginerBox .turnBtn a {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ddd; }
+.filesBox .filesMain .desginerBox .turnBtn a em {
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    margin-top: 12px;
+    background-image: url("../images/icons.png");
+    background-repeat: no-repeat; }
+.filesBox .filesMain .desginerBox .turnBtn .leftBtn {
+    position: absolute;
+    left: 20px; }
+.filesBox .filesMain .desginerBox .turnBtn .leftBtn em {
+    background-position: -55px -1px; }
+.filesBox .filesMain .desginerBox .turnBtn .rightBtn em {
+    background-position: -64px -1px; }
+.filesBox .filesMain .desginerBox .turnBtn .leftBtn:hover, .filesBox .filesMain .desginerBox .turnBtn .rightBtn:hover {
+    border: 1px solid #1686cc; }
+.filesBox .filesMain .contrastBox {
+    position: relative;
+    width: 100%;
+    height: 446px;
+    overflow: hidden; }
+.filesBox .filesMain .contrastBox ul li {
+    float: left; }
+.filesBox .filesMain .contrastBox ul li .leftImg, .filesBox .filesMain .contrastBox ul li .rightImg {
+    float: left;
+    width: 500px;
+    height: 446px; }
+.filesBox .filesMain .contrastBox ul li .leftImg img, .filesBox .filesMain .contrastBox ul li .rightImg img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+.filesBox .filesMain .contrastBox .imgName {
+    position: absolute;
+    top: 0;
+    left: 420px; }
+.filesBox .filesMain .contrastBox .imgName .standardImg, .filesBox .filesMain .contrastBox .imgName .scienceImg {
+    float: left;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center; }
+.filesBox .filesMain .contrastBox .imgName .standardImg span, .filesBox .filesMain .contrastBox .imgName .scienceImg span {
+    color: #fff;
+    font-size: 14px; }
+.filesBox .filesMain .contrastBox .imgName .standardImg {
+    background-color: #1686CC; }
+.filesBox .filesMain .contrastBox .imgName .scienceImg {
+    background-color: #fd9619; }
+.filesBox .filesMain .contrastBox .smallBox {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 0; }
+.filesBox .filesMain .contrastBox .smallBox a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: 2px;
+    border: 2px solid #ccc; }
+.filesBox .filesMain .contrastBox .smallBox a img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+.filesBox .filesMain .contrastBox .smallBox a:hover {
+    border-color: #1686cc; }
+.filesBox .filesMain .contrastBox .smallBox .curImg {
+    border-color: #1686cc; }
+.filesBox .filesMain .materialBox {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    overflow: hidden; }
+.filesBox .filesMain .materialBox ul li {
+    float: left;
+    width: 470px;
+    margin-left: 30px; }
+.filesBox .filesMain .materialBox ul li .meterialInfo {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px; }
+.filesBox .filesMain .materialBox ul li .meterialInfo .meterialImg {
+    width: 219px;
+    height: 100%; }
+.filesBox .filesMain .materialBox ul li .meterialInfo .meterialImg img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+.filesBox .filesMain .materialBox ul li .meterialInfo .meterialText {
+    margin-left: 20px;
+    width: 231px; }
+.filesBox .filesMain .materialBox ul li .meterialInfo .meterialText .meterialTit {
+    width: 208px;
+    font-size: 14px;
+    margin-top: 25px;
+    line-height: 20px;
+    color: #333;
+    font-weight: bolder; }
+.filesBox .filesMain .materialBox ul li .meterialInfo .meterialText .meterialTit span {
+    font-weight: normal; }
+.filesBox .filesMain .materialBox ul li .meterialInfo .meterialText p {
+    width: 208px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666; }
+.filesBox .filesMain .turnBtn {
+    position: absolute;
+    width: 90px;
+    top: -43px;
+    right: 10px; }
+.filesBox .filesMain .turnBtn a {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ddd; }
+.filesBox .filesMain .turnBtn a em {
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    margin-top: 12px;
+    background-image: url("../images/icons.png");
+    background-repeat: no-repeat; }
+.filesBox .filesMain .turnBtn a:hover {
+    border-color: #1686cc; }
+.filesBox .filesMain .turnBtn .leftBtn {
+    left: 0; }
+.filesBox .filesMain .turnBtn .leftBtn em {
+    background-position: -55px -1px; }
+.filesBox .filesMain .turnBtn .rightBtn {
+    right: 0; }
+.filesBox .filesMain .turnBtn .rightBtn em {
+    background-position: -64px -1px; }
+.filesBox .filesMain .completeCon {
+    position: relative;
+    height: 560px; }
+.filesBox .filesMain .completeCon .completeTit ul li {
+    height: 280px; }
+.filesBox .filesMain .completeCon .completeTit ul li a {
+    height: 280px;
+    line-height: 280px; }
+.filesBox .filesMain .completeCon .completeImgBox {
+    height: 560px;
+    overflow: hidden; }
+.filesBox .filesMain .completeCon .completeImgBox .filesImgLi {
+    width: 970px;
+    height: 560px;
+    overflow: hidden; }
+.filesBox .filesMain .completeCon .completeImgBox .filesImgLi img {
+    height: 560px; }
+.filesBox .filesMain .completeCon .completeImgBox .filesImgLi .slideBtn {
+    top: 255px; }
+.filesBox .originalBox {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+.filesBox .originalBox .slideBtn .prevBtn, .filesBox .completeCon .slideBtn .prevBtn {
+    left: 74px;
+    *left: 4px; }
+.filesBox .originalBox .slideBtn .nextBtn, .filesBox .completeCon .slideBtn .nextBtn {
+    *right: 74px; }
+.filesBox .originalBox .slideBtn .nextBtn:hover, .filesBox .completeCon .slideBtn .nextBtn:hover {
+    *right: 74px; }
+
+.filesBox .filesMain .titleList ul li a span {
+    *margin-top: 80px; }
