@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../../lib/css/base.css"/>
+    <link href="alerts.css" rel="stylesheet" />
+    <script src="../../lib/js/jquery-1.11.3.min.js"></script>
+    <script src="alerts.js"></script>
+    <script>
+        function a() {
+            jAlert("alert", "alert", function () { alert(1) });
+        }
+        function b() {
+            jConfirm("confirm", "confirm", function (i) {
+                //if (i) { alert("true") } else { alert("false") }
+                alert(i);
+            });
+        }
+        function c() {
+            jPrompt("prompt", "默认值", "prompt", function (i) { if (i != null) $("#txt1").val(i) });
+        }
+        function auto() { 
+            alert($("#file1").val());
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt1" />
+    <a href="javascript:;" onclick="a()">alert</a>
+    <a href="javascript:;" onclick="b()">confirm</a>
+    <a href="javascript:;" onclick="c()">prompt</a>
+
+    <input type="file" id="file1" onchange="auto()" />
+</body>
+</html>
